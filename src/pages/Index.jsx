@@ -1,13 +1,19 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Example from '../components/Example';
+import Header from '../components/Header';
+import Introduction from '../components/Introduction';
+import FactsSection from '../components/FactsSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <Layout>
-      {/* - Write modular code by creating separate files for each React component to keep your files as small and maintainable as possible. */}
-      <Example />
-    </Layout>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Introduction />
+        <FactsSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
