@@ -1,5 +1,6 @@
 import React from 'react';
 import { Flag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,8 +12,8 @@ const Header = () => {
         </div>
         <nav>
           <ul className="flex space-x-4">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About</a></li>
+            <li><Link to="/" className="hover:underline">Home</Link></li>
+            <li><Link to="/about" className="hover:underline">About</Link></li>
             <li><a href="#" className="hover:underline">Contact</a></li>
           </ul>
         </nav>
